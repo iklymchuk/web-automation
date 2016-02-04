@@ -29,16 +29,19 @@
           <target>1.7</target>
         </configuration>
       </plugin>
+
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
-        <inherited>true</inherited>
+        <version>2.17</version>
         <configuration>
+          <argLine>-Xmx1024m -Xms128M -XX:MaxPermSize=128M -DscreenshotPath=${project.build.directory}/surefire-reports/screenshots/ </argLine>
           <suiteXmlFiles>
             <suiteXmlFile>smoke-test.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
+
     </plugins>
   </build>
 
