@@ -6,9 +6,9 @@ package com.klymchuk.reflectionApi.staticData;
 public enum PageTitle {
 
     EMPTY(""),
-    HOME_PAGE("Home Page"),
-    LOGIN_PAGE("Login Page"),
-    ACCOUNT_PAGE("Account Page");
+    LOGIN_PAGE("ONLINE STORE › Log In"),
+    HOME_PAGE(""),
+    ACCOUNT_PAGE("");
 
     private String pageTitle;
 

@@ -5,8 +5,8 @@ package com.klymchuk.reflectionApi.staticData;
  */
 public enum PageUrl {
 
+    LOGIN_PAGE("http://store.demoqa.com/tools-qa/"),
     HOME_PAGE(""),
-    LOGIN_PAGE(""),
     ACCOUNT_PAGE("");
 
     private String pageUrl;

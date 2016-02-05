@@ -13,6 +13,8 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import org.openqa.selenium.support.pagefactory.ElementLocatorFactory;
 import org.openqa.selenium.support.ui.ExpectedCondition;
+import ru.yandex.qatools.allure.annotations.Attachment;
+import ru.yandex.qatools.allure.annotations.Step;
 
 import static  org.testng.Assert.assertEquals;
 
@@ -67,6 +69,7 @@ public class BasePage extends BaseComponent {
         return getTitle().equals(driver.getTitle());
     }
 
+    @Step
     public void openPage() {
         driver.get(getUrl());
         assertEquals(driver.getTitle(), getTitle());

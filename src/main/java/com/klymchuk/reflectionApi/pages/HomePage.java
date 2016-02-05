@@ -22,5 +22,6 @@ public class HomePage extends BasePage {
         return driver.findElement(SIGN_OUT_LINK).isDisplayed();
     }
 
-
+//PASSkreativ1221
 }
+

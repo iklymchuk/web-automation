@@ -5,7 +5,17 @@ import com.klymchuk.reflectionApi.staticData.PageTitle;
 import com.klymchuk.reflectionApi.staticData.PageUrl;
 import com.klymchuk.reflectionApi.util.LocatorsLoader;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import ru.yandex.qatools.allure.annotations.Attachment;
+import ru.yandex.qatools.allure.annotations.Step;
+
+import java.io.File;
+import java.io.IOException;
+import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 /**
  * Created by iklymchuk on 02.02.16.
@@ -26,4 +36,6 @@ public class LoginPage extends BasePage {
         driver.findElement(SUBMIT_BUTTON).click();
         return BasePage.create(driver, HomePage.class);
     }
+
+
 }
